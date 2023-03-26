@@ -152,7 +152,7 @@ canvas {
 .gpu-temperatures {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .row {
@@ -166,16 +166,13 @@ canvas {
   background-color: rgba(54, 163, 235, 0.719);
   border-radius: 10px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   max-width: 300px; 
-  flex-basis: calc(33.33% - 20px); 
   margin-left: 20px; 
 }
 
-.gpu-temperature:last-child {
-  margin-right: 0; 
-}
+
 
 .gpu-label {
   display: block;
@@ -191,20 +188,25 @@ canvas {
 
 @media (max-width: 850px) {
   .gpu-temperature {
-  max-width: 25px; 
-  height: 115px;
+  padding: 5px;
+  height: 70px;
  margin-left: 10px;
 }
-
+.gpu-label{
+  font-size: 12px;
+}
   
 .container {
-    width: 100%;
-    height: 400px;
+    width: 80%;
+    height: 350px;
   }
 
 
   .graph-container{
     height: 200px;
+  }
+  .temperature{
+    font-size: 16px;
   }
 }
 @media (min-width: 1550px) {
@@ -213,3 +215,4 @@ canvas {
 }
 }
 </style>
+
