@@ -209,10 +209,21 @@ canvas {
     font-size: 16px;
   }
 }
+@media screen and (min-width: 701px) and (max-width: 1035px) {
+  canvas {
+ 
+  width: max-content;
+  margin-left: 100px;
+}
+ }
+ @media screen and (min-width: 851px) and (max-width: 1035px) {
+  .graph-container {
+  height: 200px;
+}
+ }
 @media (min-width: 1550px) {
     .graph-container {
   height: 700px;
 }
 }
 </style>
-
