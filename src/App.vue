@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <NavBar/>
+  <ServerInfo/>
+  <div class="container-graficos">
+  <div class="graficos-cpu-disco">
+   <CPUGraph/>
+   <DISKGraph/>
+  </div>
+  <div class="graficos-ram-net">
+    <RAMGraph/>
+   <NETGraph/>
+  </div>
+</div>
+   <GPUGraph/>
+  <FooterBar/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CPUGraph from './components/CPUGraph.vue';
+import RAMGraph from './components/RAMGraph.vue';
+import DISKGraph from './components/DISKGraph.vue';
+import NETGraph from './components/NETGraph.vue';
+import GPUGraph from './components/GPUGraph.vue';
+import ServerInfo from '/src/components/ServerInfo.vue';
+import NavBar from '/src/components/NavBar.vue';
+import FooterBar from '/src/components/FooterBar.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CPUGraph,
+    RAMGraph,
+    DISKGraph,
+    NETGraph,
+    GPUGraph,
+    ServerInfo,
+    NavBar,
+    FooterBar,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+
 </style>
