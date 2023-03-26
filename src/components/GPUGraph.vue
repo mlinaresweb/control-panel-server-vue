@@ -191,7 +191,7 @@ canvas {
 
 @media (max-width: 850px) {
   .gpu-temperature {
-  width: 40px; 
+  max-width: 30px;  
   height: 115px;
   flex-basis: calc(21.11% - 20px); 
  margin-left: 10px;
