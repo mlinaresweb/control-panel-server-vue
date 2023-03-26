@@ -65,7 +65,7 @@
     .plate {
      background-color: rgba(54, 163, 235, 0.719);
       border-radius: 10px;
-      padding: 30px 40px;
+      padding: 25px 30px;
       text-align: center;
       width: 100px;
     }
@@ -106,14 +106,12 @@
     }
 
 /*  Media Query Graficos*/
-   @media (max-width: 600px) {
+   @media (max-width: 700px) {
     .container {
       width: 80%;
-      height: 370px;
+      height: 350px;
     }
-       .plate-container{
-        margin-left: 90px;
-       }
+      
     .graph-container {
     height: 195px;
    }
@@ -125,7 +123,27 @@
   .plate-value{
     font-size: 14px;
   }
+  .plate{
+    padding: 20px 20px;
+  }
+  
    }
+   
+  @media screen and (min-width: 530px) and (max-width: 700px) {
+    canvas {
+      width: max-content;
+      margin-left: 60px;
+     }
+  }
+  @media screen and (min-width: 701px) and (max-width: 1035px) {
+    .graph-container {
+      height: 200px;
+     }
+     .plate-container{
+      margin-right: 140px ;
+    }
+  }
+ 
    @media (min-width: 1550px) {
       .graph-container {
     height: 400px;
