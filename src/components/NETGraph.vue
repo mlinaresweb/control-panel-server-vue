@@ -92,18 +92,18 @@
     }
   };
   </script>
-    <style scoped>
+<style scoped>
  .container-plates{
   display: flex;
   justify-content: center;
-  margin-right: 60px;
+
  }
  .plate{
   width: 90%;
 
  }
  
- @media (max-width: 600px) {
+ @media (max-width: 700px) {
   .plate{
   width: 50%;
 
@@ -116,13 +116,11 @@
 .plate-value{
   font-size: 14px;
 }
-.container-plates{
-  margin-right: 125px;
- }
+
    }
    @media (max-width: 1024px) {
   .plate{
-  width: 50%;
+  padding: 15px 25px;
 
  }
  .plate-header{
@@ -134,5 +132,16 @@
   font-size: 14px;
 }
    }
-
-     </style>
+   @media screen and (min-width: 701px) and (max-width: 1035px) {
+    
+     .plate-container{
+      margin-right: 40px ;
+    }
+  }
+  @media screen and (min-width: 1036px) and (max-width: 1900px) {
+    
+    .plate-container{
+     margin-right: 80px ;
+   }
+ }
+</style>
