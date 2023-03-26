@@ -191,15 +191,14 @@ canvas {
 
 @media (max-width: 850px) {
   .gpu-temperature {
-  max-width: 30px;  
+  max-width: 25px; 
   height: 115px;
-  flex-basis: calc(21.11% - 20px); 
  margin-left: 10px;
 }
 
   
 .container {
-    width: 80%;
+    width: 100%;
     height: 400px;
   }
 
@@ -211,13 +210,6 @@ canvas {
 @media (min-width: 1550px) {
     .graph-container {
   height: 700px;
-}
-}
-@media (max-width: 550px) {
-  .gpu-temperature {
-
-  flex-basis: calc(10.11% - 20px); 
-
 }
 }
 </style>
